@@ -9,7 +9,7 @@ Or `brew tap wang-q/tap` and then `brew install <formula>`.
 Or install via URL (which will not receive updates):
 
 ```
-brew install https://raw.githubusercontent.com/Homebrew/homebrew-games/master/<formula>.rb
+brew install https://raw.githubusercontent.com/wang-q/tap/master/<formula>.rb
 ```
 
 ## Documentation
