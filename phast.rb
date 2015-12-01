@@ -11,8 +11,8 @@ class Phast < Formula
     cd "src" do
       system "make"
     end
-    bin.install Dir[bin/*]
-    lib.install Dir[lib/*]
+    bin.install Dir["bin/*"]
+    lib.install Dir["lib/*"]
   end
 
   test do
