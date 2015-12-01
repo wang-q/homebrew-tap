@@ -14,6 +14,8 @@ brew install https://raw.githubusercontent.com/wang-q/tap/master/<formula>.rb
 
 ## Documentation
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://github.com/Homebrew/homebrew/tree/master/share/doc/homebrew#readme).
+* `brew help`, `man brew` or check [Homebrew's documentation](https://github.com/Homebrew/homebrew/tree/master/share/doc/homebrew#readme).
 
-[A great post](http://formalfriday.club/2015/01/05/creating-your-own-homebrew-tap-and-formula.html) about setting up a tap.
+* [A great post](http://formalfriday.club/2015/01/05/creating-your-own-homebrew-tap-and-formula.html) about setting up a tap.
+
+* Every details of writing a formula: [Formula Cookbook](https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Formula-Cookbook.md).
