@@ -1,9 +1,9 @@
 class Multiz < Formula
   desc "A strip-down version of multiz-tba"
   homepage "https://github.com/wang-q/multiz"
-  url "https://github.com/wang-q/multiz/archive/v1.1.tar.gz"
+  url "https://github.com/wang-q/multiz/archive/v1.1.1.tar.gz"
   version "1.0"
-  sha256 "a51a2fcda4854082b2480080db3fce2484ec1416251533a98f8d68d4c3b78f5f"
+  sha256 "839f6625085178e20c52dbe781e4cacf11cb06df7e4d6d3a3c69c787b6b0e104"
 
   def install
     system "make"
