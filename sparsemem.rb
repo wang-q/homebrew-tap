@@ -1,9 +1,9 @@
 class Sparsemem < Formula
   desc "A Practical Algorithm for Finding Maximal Exact Matches in Large Sequence Data Sets Using Sparse Suffix Arrays"
   homepage "https://github.com/wang-q/sparseMEM"
-  url "https://github.com/wang-q/sparseMEM/archive/v1.0.0.tar.gz"
-  version "1.0.0"
-  sha256 "84a75514784ae4cc8151adaf16403a57dd3b0086cdfacd51e0777de8bd0cce4d"
+  url "https://github.com/wang-q/sparseMEM/archive/v1.0.1.tar.gz"
+  version "1.0.1"
+  sha256 "4d6f212d592bb312f3665474f11e9732fa30c37db601480ef0d2680ccfd3335f"
 
   def install
     system "make"
