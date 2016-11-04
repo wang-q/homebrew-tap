@@ -5,7 +5,7 @@ class Faops < Formula
   version "0.2.3"
   sha256 "57c9e0ab30bebe0b1dffc9e878398126547b6c11ab21aa00373510009c546521"
 
-  depends_on "zlib"
+  depends_on "homebrew/dupes/zlib"
 
   def install
     system "make"
