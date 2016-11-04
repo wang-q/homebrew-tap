@@ -1,9 +1,9 @@
 class Faops < Formula
   desc "faops: Operate fasta files"
   homepage "https://github.com/wang-q/faops"
-  url "https://github.com/wang-q/faops/archive/0.2.1.tar.gz"
-  version "0.2.1"
-  sha256 "f6428a2527c1eb24726b8c11880ce243f8f0e06acd8f102cf0cb97b9ceef85ef"
+  url "https://github.com/wang-q/faops/archive/0.2.3.tar.gz"
+  version "0.2.3"
+  sha256 "57c9e0ab30bebe0b1dffc9e878398126547b6c11ab21aa00373510009c546521"
 
   depends_on "zlib"
 
@@ -14,6 +14,6 @@ class Faops < Formula
   end
 
   test do
-    system "#{bin}/scythe", "count"
+    system "#{bin}/faops", "help"
   end
 end
