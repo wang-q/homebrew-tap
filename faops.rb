@@ -3,7 +3,7 @@ class Faops < Formula
   homepage "https://github.com/wang-q/faops"
   url "https://github.com/wang-q/faops/archive/0.2.4.tar.gz"
   version "0.2.4"
-  sha256 "360c7a2a8c954b1ca050010639ece3d8440c06f411064551dccaf1af214c2dfa"
+  sha256 "8711968dc3b8e04a025c5384c679614ebff236620d121ad5a570ec5bf819b92a"
 
   depends_on "homebrew/dupes/zlib"
 
