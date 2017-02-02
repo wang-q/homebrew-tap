@@ -12,7 +12,7 @@ class DalignerAT20161119 < Formula
   def install
     system "make"
     bin.install %w[daligner HPC.daligner LAcat LAcheck LAdump LAindex LAmerge LAshow LAsort LAsplit]
-    doc.install "README"
+    doc.install "README.md"
   end
 
   test do
