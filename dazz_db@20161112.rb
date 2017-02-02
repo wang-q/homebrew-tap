@@ -5,7 +5,7 @@ class DazzDbAT20161112 < Formula
   # tag "bioinformatics"
 
   url "https://github.com/wang-q/DAZZ_DB/archive/20161112.tar.gz"
-  sha256 "e7a94775af88475df5f7f9c96588f9b11ad189052c21b69804e905089eb1db00"
+  sha256 "f07d6faf6b6f6c69989248382653de295496d230852e02faf3c0043990db29e4"
 
   head "https://github.com/wang-q/DAZZ_DB.git"
 
