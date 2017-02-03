@@ -1,4 +1,4 @@
-class DalignerATwangq < Formula
+class DalignerAT20170203 < Formula
   desc "DALIGNER: Find all significant local alignments between reads"
   homepage "https://github.com/thegenemyers/DALIGNER"
   # doi "10.1007/978-3-662-44753-6_5"
