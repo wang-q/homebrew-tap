@@ -18,15 +18,12 @@ class Superreads < Formula
   depends_on LinuxRequirement
 
   def install
-    ENV.deparallelize
-    ENV["DEST"] = prefix
-    system "./install.sh"
-
-    # Conflicts with jellyfish
-    rm bin/"jellyfish"
-    rm Dir[lib/"libjellyfish*", lib/"pkgconfig/jellyfish-2.0.pc"]
-    rm_r include/"jellyfish-1"
-    rm man1/"jellyfish.1"
+    system "./configure",
+      "--disable-debug",
+      "--disable-dependency-tracking",
+      "--disable-silent-rules",
+      "--prefix=#{prefix}"
+    system "make", "install"
   end
 
   test do
