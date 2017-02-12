@@ -9,8 +9,8 @@ end
 class Superreads < Formula
   desc "SuperReads_RNA: a simplified version of MaSuRCA"
   homepage "http://www.genome.umd.edu/masurca.html"
-  url "https://raw.githubusercontent.com/wang-q/homebrew-tap/master/external/SuperReads_RNA-1.0.1_2.tar.gz"
-  sha256 "0c3385f7a39180e00d7539e7081afe8e3338e2b502547ab0b25049a28b110e9d"
+  url "https://raw.githubusercontent.com/wang-q/homebrew-tap/master/external/superreads-3.1.3.tar.gz"
+  sha256 "8cee09f7fcf967583b0998046a81d607c32a824aea4ada61d5d190640ced782a"
   # doi "10.1093/bioinformatics/btt476"
   # tag "bioinformatics"
 
