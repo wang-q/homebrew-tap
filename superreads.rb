@@ -13,7 +13,8 @@ class Superreads < Formula
   sha256 "1544961d1777df1e3e015433d6d7470372283f88271bd14b6cb5ca78c6d36bba"
   # doi "10.1093/bioinformatics/btt476"
   # tag "bioinformatics"
-  revision "2"
+  version "3.1.3"
+  revision 2
 
   # Remove ufasta may solve the problem
   depends_on LinuxRequirement
