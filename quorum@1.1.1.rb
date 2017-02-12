@@ -1,4 +1,4 @@
-class Quorum < Formula
+class QuorumAT111 < Formula
   desc "QUality Optimized Reads from the University of Maryland"
   homepage "https://github.com/gmarcais/Quorum"
   url "https://github.com/gmarcais/Quorum/releases/download/v1.1.1/quorum-1.1.1.tar.gz"
