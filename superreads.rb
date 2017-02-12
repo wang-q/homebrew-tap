@@ -7,7 +7,7 @@ class LinuxRequirement < Requirement
 end
 
 class Superreads < Formula
-  desc "SuperReads_RNA: a simplified version of MaSuRCA"
+  desc "SuperReads: a simplified version of MaSuRCA"
   homepage "http://www.genome.umd.edu/masurca.html"
   url "https://raw.githubusercontent.com/wang-q/homebrew-tap/master/external/superreads-3.1.3.tar.gz"
   sha256 "8cee09f7fcf967583b0998046a81d607c32a824aea4ada61d5d190640ced782a"
@@ -19,14 +19,12 @@ class Superreads < Formula
 
   def install
     system "./configure",
-      "--disable-debug",
-      "--disable-dependency-tracking",
       "--disable-silent-rules",
       "--prefix=#{prefix}"
     system "make", "install"
   end
 
   test do
-    system "#{bin}/createSuperReads_RNA", "-h"
+    system "#{bin}/create_k_unitigs_large_k", "--help"
   end
 end
