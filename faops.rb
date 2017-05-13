@@ -4,8 +4,9 @@ class Faops < Formula
   url "https://github.com/wang-q/faops/archive/0.5.2.tar.gz"
   version "0.5.2"
   sha256 "76ab7dc19d50f26d6cf90de0095dc532cb05f4491e27307cb8827547008f3521"
+  revision 1
 
-  depends_on "homebrew/dupes/zlib"
+  depends_on "zlib"
 
   def install
     system "make"
