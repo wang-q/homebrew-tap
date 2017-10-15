@@ -15,4 +15,5 @@ class jellyfishAT224 < Formula
 
   test do
     system "#{bin}/jellyfish", "--version"
+  end
 end
