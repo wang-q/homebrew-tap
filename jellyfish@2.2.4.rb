@@ -1,4 +1,4 @@
-class jellyfishAT224 < Formula
+class JellyfishAT224 < Formula
   desc "Fast, memory-efficient counting of DNA k-mers"
   homepage "http://www.genome.umd.edu/jellyfish.html"
   # doi "10.1093/bioinformatics/btr011"
