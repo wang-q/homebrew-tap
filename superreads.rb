@@ -19,7 +19,6 @@ class Superreads < Formula
   # Remove ufasta may solve the problem
   depends_on LinuxRequirement
 
-  depends_on "jellyfish"
   depends_on "pkg-config" => :build
 
   def install
