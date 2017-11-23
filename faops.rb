@@ -1,9 +1,9 @@
 class Faops < Formula
   desc "faops: Operate fasta files"
   homepage "https://github.com/wang-q/faops"
-  url "https://github.com/wang-q/faops/archive/0.8.3.tar.gz"
-  version "0.8.3"
-  sha256 "caf681e98bc8eed59e5c55e07f05c25e2d2370ee63faf5a7fd3c9ff091b8137c"
+  url "https://github.com/wang-q/faops/archive/0.8.4.tar.gz"
+  version "0.8.4"
+  sha256 "fb3292aec58d77d96ddda0c4fcc751889c0a1e3511cf91e797e401ed272a4226"
 
   depends_on "zlib"
 
