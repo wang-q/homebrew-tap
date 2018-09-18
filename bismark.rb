@@ -4,9 +4,9 @@ class Bismark < Formula
   # doi "10.1093/bioinformatics/btr167"
   # tag "bioinformatics"
 
-  url "https://www.bioinformatics.babraham.ac.uk/projects/bismark/bismark_v0.20.0.tar.gz"
+  url "https://github.com/FelixKrueger/Bismark/archive/0.20.0.tar.gz"
   version "0.2.0"
-  sha256 "4c3f0d9eb75c4bf099505c5a2c1f9a00c35a54cce3074c572f8d69ecb9831337"
+  sha256 "825d79e098a5c826edcffcf5b4e7b330b2a368d118857fdbcaa5cb91c2a9b22b"
 
   def install
     bin.install %w[bam2nuc bismark bismark2bedGraph bismark2report bismark2summary bismark_genome_preparation bismark_methylation_extractor coverage2cytosine deduplicate_bismark filter_non_conversion]
