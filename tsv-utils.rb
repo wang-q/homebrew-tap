@@ -1,4 +1,4 @@
-class Tempered < Formula
+class TsvUtils < Formula
     desc "Command line utilities for tabular data files"
     homepage "https://github.com/eBay/tsv-utils"
 
