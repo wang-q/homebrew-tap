@@ -3,7 +3,7 @@ class Jrunlist < Formula
   homepage "https://github.com/egateam/jrunlist"
   url "https://oss.sonatype.org/content/groups/staging/com/github/egateam/jrunlist/0.1.7/jrunlist-0.1.7-jar-with-dependencies.jar"
   version "0.1.7"
-  sha1 "de0642c39c2e163f088560e564d41a3aab365f32"
+  sha256 "f4509e40bcdb1b024ad49c2cfe8ce5ce39bfba9e00f1726c12cd49dbf983e7bd"
 
   def install
     libexec.install "jrunlist-0.1.7-jar-with-dependencies.jar"
