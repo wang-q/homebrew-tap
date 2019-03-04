@@ -11,6 +11,7 @@ class PerlAT5224 < Formula
   def install
     args = [
       "-des",
+      "-Dcc=gcc",
       "-Dprefix=#{prefix}",
       "-Dman1dir=#{man1}",
       "-Dman3dir=#{man3}",
