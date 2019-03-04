@@ -1,7 +1,7 @@
 class PerlAT5224 < Formula
   desc "Highly capable, feature-rich programming language"
   homepage "https://www.perl.org/"
-  url "https://www.cpan.org/src/5.0/perl-5.22.4.tar.gz"
+  url "http://mirrors.ustc.edu.cn/CPAN/src/5.0/perl-5.22.4.tar.gz"
   sha256 "ba9ef57c2b709f2dad9c5f6acf3111d9dfac309c484801e0152edbca89ed61fa"
 
   keg_only :versioned_formula
