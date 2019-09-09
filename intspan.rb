@@ -15,7 +15,8 @@ class Intspan < Formula
     bottle :unneeded
 
     def install
-        bin.install Dir["target/release/*"]
+        # already in target/
+        bin.install Dir["release/*"]
     end
 
     test do
