@@ -1,4 +1,4 @@
-class IntSpan < Formula
+class Intspan < Formula
     desc "Command line tools for IntSpan related bioinformatics operations"
     homepage "https://github.com/wang-q/intspan"
 
