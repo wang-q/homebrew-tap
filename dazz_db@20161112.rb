@@ -1,11 +1,11 @@
-class DazzDbAT20161112 < Formula
+class DazzDbAT20190923 < Formula
   desc "DAZZ_DB: The Dazzler Data Base"
   homepage "https://github.com/thegenemyers/DAZZ_DB"
   # doi "10.1007/978-3-662-44753-6_5"
   # tag "bioinformatics"
 
-  url "https://github.com/wang-q/DAZZ_DB/archive/20161112.tar.gz"
-  sha256 "f07d6faf6b6f6c69989248382653de295496d230852e02faf3c0043990db29e4"
+  url "https://github.com/wang-q/DAZZ_DB/archive/20190923.tar.gz"
+  sha256 "051ec233ed7bea6b8056555fcad3858d8eff90b55ca0e3a25b4c4dd753fdd333"
 
   head "https://github.com/wang-q/DAZZ_DB.git"
 
