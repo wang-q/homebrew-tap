@@ -1,7 +1,7 @@
 class Jrange < Formula
   desc "`jrange` operates ranges and links of ranges on chromosomes"
   homepage "https://github.com/egateam/jrange"
-  url "https://oss.sonatype.org/content/groups/staging/com/github/egateam/jrange/0.0.11/jrange-0.0.11-jar-with-dependencies.jar"
+  url "https://repo1.maven.org/maven2/com/github/egateam/jrange/0.0.11/jrange-0.0.11-jar-with-dependencies.jar"
   version "0.0.11"
   sha256 "1b949d389c85d9a71e96d457ddac264b750c307407901add5427d0cdd519a574"
 
