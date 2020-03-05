@@ -11,11 +11,13 @@ class TsvUtils < Formula
     end
 
     version "1.5.0"
+    revision 1
 
     bottle :unneeded
   
     def install
         bin.install Dir["bin/*"]
+        bin.install Dir["extras/scripts/*"]
     end
   
     test do
