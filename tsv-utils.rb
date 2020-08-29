@@ -3,14 +3,14 @@ class TsvUtils < Formula
     homepage "https://github.com/eBay/tsv-utils"
 
     if OS.mac?
-        url "https://github.com/eBay/tsv-utils/releases/download/v1.6.0/tsv-utils-v1.6.0_osx-x86_64_ldc2.tar.gz"
-        sha256 "d25f7c17612940be577eecb6431e70024f92ea5fba60444523d4d61f14f041eb"
+        url "https://github.com/eBay/tsv-utils/releases/download/v2.0.0/tsv-utils-v2.0.0_osx-x86_64_ldc2.tar.gz"
+        sha256 "49f5a50c0a19789a6b2c78088a39ff889ff28c5bf1d63f1e9cc909748897388d"
     elsif OS.linux?
-        url "https://github.com/eBay/tsv-utils/releases/download/v1.6.0/tsv-utils-v1.6.0_linux-x86_64_ldc2.tar.gz"
-        sha256 "a5810e07afd48c7b4f26dfe5c7479dff3b08d3dfcb52f7c72ec227441f724e40"
+        url "https://github.com/eBay/tsv-utils/releases/download/v2.0.0/tsv-utils-v2.0.0_linux-x86_64_ldc2.tar.gz"
+        sha256 "f2365778e5db6872d775456c99ec8565388c5d9aa75ebafff2c9c11d1d9a0ba2"
     end
 
-    version "1.6.0"
+    version "2.0.0"
 
     bottle :unneeded
   
