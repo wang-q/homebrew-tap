@@ -1,8 +1,8 @@
-class BbtoolsAT3859 < Formula
+class BbtoolsAT3777 < Formula
   desc "Suite of Brian Bushnell's tools for manipulating reads"
   homepage "https://jgi.doe.gov/data-and-tools/bbtools/"
-  url "https://downloads.sourceforge.net/bbmap/BBMap_38.59.tar.gz"
-  sha256 "0562634cbff0376d5412ad50e10bb0424c4d0b5d29c9b62efbe69fdd4509607d"
+  url "https://downloads.sourceforge.net/project/bbmap/BBMap_37.77.tar.gz"
+  sha256 "3004c14dace43d35f4a89bf5fdaa5a2a9fab1630e173e801da9ea386cb166e96"
 
   depends_on java: "1.7+"
 
