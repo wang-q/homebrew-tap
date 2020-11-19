@@ -7,12 +7,7 @@ class BbtoolsAT3777 < Formula
   depends_on java: "1.7+"
 
   def install
-    if OS.mac?
-      system "make", "--directory=jni", "-f", "makefile.osx"
-    elsif OS.linux?
-      system "make", "--directory=jni", "-f", "makefile.linux"
-    end
-    prefix.install %w[current jni resources]
+    prefix.install %w[current resources]
     # shell scripts look for ./{current,jni,resources} files, so keep shell scripts
     # in ./#{prefix} but place symlinks in the ../bin dir for brew to export #{bin}
     bin.mkpath
