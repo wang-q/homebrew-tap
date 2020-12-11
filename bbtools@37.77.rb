@@ -4,7 +4,7 @@ class BbtoolsAT3777 < Formula
   url "https://downloads.sourceforge.net/project/bbmap/BBMap_37.77.tar.gz"
   sha256 "3004c14dace43d35f4a89bf5fdaa5a2a9fab1630e173e801da9ea386cb166e96"
 
-  depends_on java: "1.7+"
+  depends_on "openjdk"
 
   def install
     prefix.install %w[current resources]
