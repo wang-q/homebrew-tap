@@ -14,7 +14,6 @@ class RepeatmaskerAT411 < Formula
 
   def install
     libexec.install Dir["*"]
-    perl = HOMEBREW_PREFIX/"bin/perl"
     bin.install_symlink "../libexec/RepeatMasker"
     system "cpanm", "Text::Soundex"
   end
