@@ -26,7 +26,7 @@ class RepeatmaskerAT411 < Formula
       And it will work out-of-the box with this library. This is a small library ( at this time ).
       The default aligner is RMBlast. You may reconfigure RepeatMasker by running
 
-      cd #{libexec} &&
+      cd #{HOMEBREW_PREFIX}/Cellar/repeatmasker@4.1.1/4.1.1/libexec &&
       perl configure \
         -hmmer_dir=#{HOMEBREW_PREFIX}/bin \
         -rmblast_dir=#{HOMEBREW_PREFIX}/bin \
