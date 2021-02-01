@@ -11,12 +11,13 @@ class RepeatmaskerAT411 < Formula
   depends_on "hmmer"
 
   depends_on "perl"
+  depends_on "cpanminus" => :build
 
   def install
     libexec.install Dir["*"]
     perl = HOMEBREW_PREFIX/"bin/perl"
     bin.install_symlink "../libexec/RepeatMasker"
-    system "cpan", "-i", "Text::Soundex"
+    system "cpanm", "Text::Soundex"
 
     Dir.chdir libexec.to_s do
       system "perl",
