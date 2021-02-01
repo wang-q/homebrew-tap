@@ -8,9 +8,10 @@ class RmblastAT2100 < Formula
     url "http://www.repeatmasker.org/rmblast-2.10.0+-x64-linux.tar.gz"
     sha256 "e592d0601a98b9764dd55f2aa4815beb1987beb7222f0e171d4f4cd70a0d4a03"
   end
+  version "2.10.0"
 
   def install
-    prefix.install Dir["bin/*"]
+    bin.install Dir["bin/*"]
   end
 
   test do
