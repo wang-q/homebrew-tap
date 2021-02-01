@@ -19,14 +19,6 @@ class RepeatmaskerAT411 < Formula
     bin.install_symlink "../libexec/RepeatMasker"
     system "cpanm", "Text::Soundex"
 
-    Dir.chdir libexec.to_s do
-      system "perl",
-        "configure",
-        "-hmmer_dir=#{HOMEBREW_PREFIX}/bin",
-        "-rmblast_dir=#{HOMEBREW_PREFIX}/bin",
-        "-libdir=#{libexec}/Libraries",
-        "-default_search_engine=rmblast"
-    end
   end
 
   test do
