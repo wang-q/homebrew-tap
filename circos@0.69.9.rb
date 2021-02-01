@@ -17,7 +17,7 @@ class CircosAT0699 < Formula
     inreplace "bin/gddiag", "#!/bin/env", "#!/usr/bin/env"
 
     libexec.install Dir["*"]
-    bin.install_symlink "../bin/circos"
+    bin.install_symlink "../libexec/bin/circos"
 
     system "cpanm", "Clone", "Config::General","Font::TTF::Font","GD", "List::MoreUtils", "Params::Validate", "Readonly", "Regexp::Common"
     system "cpanm", "Math::Round", "Math::Bezier", "Math::VecStat", "Number::Format", "Statistics::Basic"
