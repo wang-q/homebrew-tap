@@ -25,12 +25,13 @@ class RepeatmaskerAT411 < Formula
       RepeatMasker comes with a copy of the curated portion of Dfam ( Libraries/Dfam.h5 ).
       And it will work out-of-the box with this library. This is a small library ( at this time ).
       The default aligner is RMBlast. You may reconfigure RepeatMasker by running
-        cd #{libexec} &&
-            perl configure \
-                -hmmer_dir=#{HOMEBREW_PREFIX}/bin \
-                -rmblast_dir=#{HOMEBREW_PREFIX}/bin \
-                -libdir=#{libexec}/Libraries \
-                -default_search_engine=rmblast
+
+      cd #{libexec} &&
+      perl configure \
+        -hmmer_dir=#{HOMEBREW_PREFIX}/bin \
+        -rmblast_dir=#{HOMEBREW_PREFIX}/bin \
+        -libdir=#{libexec}/Libraries \
+        -default_search_engine=rmblast
     EOS
   end
 
