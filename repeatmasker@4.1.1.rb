@@ -5,10 +5,9 @@ class RepeatmaskerAT411 < Formula
   version "4.1.1"
   sha256 "a2934996efd0d4baf1247970b94a5dbf5979453f11de31a288b6c099a826240c"
 
-  depends_on "blast"
-  depends_on "brewsci/bio/rmblast"
-  depends_on "brewsci/bio/trf"
   depends_on "hmmer"
+  depends_on "wang-q/tap/rmblast@2.10.0"
+  depends_on "brewsci/bio/trf"
 
   depends_on "perl"
   depends_on "cpanminus" => :build
