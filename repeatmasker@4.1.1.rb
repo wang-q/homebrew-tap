@@ -31,6 +31,7 @@ class RepeatmaskerAT411 < Formula
         -hmmer_dir=#{HOMEBREW_PREFIX}/bin \
         -rmblast_dir=#{HOMEBREW_PREFIX}/bin \
         -libdir=#{libexec}/Libraries \
+        -trf_prgm=#{HOMEBREW_PREFIX}/bin/trf \
         -default_search_engine=rmblast
     EOS
   end
