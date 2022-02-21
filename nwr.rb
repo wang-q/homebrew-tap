@@ -1,4 +1,4 @@
-class Intspan < Formula
+class Nwr < Formula
     desc "`nwr` is a command line tool for newick and taxonomy "
     homepage "https://github.com/wang-q/nwr"
 
