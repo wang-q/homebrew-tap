@@ -12,8 +12,6 @@ class Intspan < Formula
 
     version "0.4.15"
 
-    bottle :unneeded
-
     def install
         # already in target/
         if OS.mac?

@@ -12,8 +12,6 @@ class TsvUtils < Formula
 
     version "2.1.1"
 
-    bottle :unneeded
-  
     def install
         bin.install Dir["bin/*"]
         bin.install Dir["extras/scripts/*"]
