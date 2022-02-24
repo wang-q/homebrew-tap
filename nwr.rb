@@ -7,7 +7,7 @@ class Nwr < Formula
         sha256 "a26545d111a0bb6729af1ea7ba49b1d61c420dfe6d03fc5192d81a5c7aedabeb"
     elsif OS.linux?
         url "https://github.com/wang-q/nwr/releases/download/v0.5.3/nwr-x86_64-unknown-linux-gnu.tar.gz"
-        sha256 "06862a896501d6863ee0d971a0b2744974d60cf699cef8e9981d3c470b6a38"
+        sha256 "06862a896501d6863ee0d971a0b2744974d60cf699cef8e9981d3c470b6a387a"
     end
 
     version "0.5.3"
