@@ -1,8 +1,8 @@
 class Paml49 < Formula
   homepage "http://abacus.gene.ucl.ac.uk/software/paml.html"
-  url "http://abacus.gene.ucl.ac.uk/software/paml4.9a.tgz"
-  sha256 "1400b6a48aa7ba2dee637352430a1f64594674168cf7a749ac79093da9a39ef4"
-  version "4.9a"
+  url "http://abacus.gene.ucl.ac.uk/software/paml4.9j.tgz"
+  sha256 "9b00fbd37fe825129a160599372ba4c8e88b22d14c0388044a711fb281a0191d"
+  version "4.9j"
 
   def install
     cd "src" do
