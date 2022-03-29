@@ -21,6 +21,12 @@ class Wfmash < Formula
     end
   end
 
+  def caveats; <<~EOS
+    Other versions of gcc may confuse cmake and cause linker errors.
+    If this happens, remove something like `gcc@5`.
+    EOS
+  end
+
   test do
     system "#{bin}/wfmash", "--version"
   end
