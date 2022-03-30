@@ -18,6 +18,8 @@ class Wfmash < Formula
 
     ENV["CC"] = "gcc-11"
     ENV["CXX"] = "g++-11"
+    ENV["HOMEBREW_CC"] = "gcc-11"
+    ENV["HOMEBREW_CXX"] = "g++-11"
 
     cmake_args = *std_cmake_args + %W[
       -DCMAKE_C_COMPILER='gcc-11'
