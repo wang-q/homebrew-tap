@@ -16,12 +16,6 @@ class Wfmash < Formula
     bin.install "scripts/paf2dotplot"
     bin.install "scripts/wfplot.R"
 
-    ENV["CC"] = "gcc-11"
-    ENV["CXX"] = "g++-11"
-    ENV["HOMEBREW_CC"] = "gcc-11"
-    ENV["HOMEBREW_CXX"] = "g++-11"
-    ENV["CMAKE_PREFIX_PATH"] = "#{prefix}"
-
     cmake_args = *std_cmake_args + %W[
       -DCMAKE_C_COMPILER='gcc-11'
       -DCMAKE_CXX_COMPILER='g++-11'
