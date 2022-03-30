@@ -16,12 +16,18 @@ class Wfmash < Formula
     bin.install "scripts/paf2dotplot"
     bin.install "scripts/wfplot.R"
 
+    cmake_args = *std_cmake_args + %W[
+      -DCMAKE_C_COMPILER='gcc-11'
+      -DCMAKE_CXX_COMPILER='g++-11'
+      -DCMAKE_PREFIX_PATH=#{prefix}
+    ]
+
     mkdir "build" do
       # avoid system gcc
       # mkdir build && cd build
       # cmake .. -DCMAKE_C_COMPILER='gcc-11' -DCMAKE_CXX_COMPILER='g++-11' -DCMAKE_BUILD_TYPE=Release
       # make
-      system "cmake", "..", "-DCMAKE_C_COMPILER='gcc-11'", "-DCMAKE_CXX_COMPILER='g++-11'", "-DCMAKE_BUILD_TYPE=Release", *std_cmake_args
+      system "cmake", "..", *cmake_args
       system "make"
       bin.install "bin/wfmash"
     end
