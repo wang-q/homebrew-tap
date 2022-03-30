@@ -10,7 +10,8 @@ class Spoa < Formula
 
   def install
     mkdir "build" do
-      system "cmake", "..", "-Dspoa_build_executable=ON", "-DCMAKE_BUILD_TYPE=Release", "-Dspoa_optimize_for_portability=ON", *std_cmake_args
+      # "-DCMAKE_BUILD_TYPE=Release" comes with *std_cmake_args
+      system "cmake", "..", "-Dspoa_build_executable=ON", "-Dspoa_optimize_for_portability=ON", *std_cmake_args
       system "make"
       system "make", "install"
     end
