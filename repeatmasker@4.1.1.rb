@@ -7,7 +7,7 @@ class RepeatmaskerAT411 < Formula
 
   depends_on "hmmer"
   depends_on "wang-q/tap/rmblast@2.10.0"
-  depends_on "brewsci/bio/trf"
+  depends_on "wang-q/tap/trf@4"
 
   depends_on "perl"
   depends_on "cpanminus" => :build
