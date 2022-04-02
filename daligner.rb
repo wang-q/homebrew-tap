@@ -1,13 +1,8 @@
-class DalignerAT20201008 < Formula
+class Daligner < Formula
   desc "DALIGNER: Find all significant local alignments between reads"
   homepage "https://github.com/thegenemyers/DALIGNER"
-  # doi "10.1007/978-3-662-44753-6_5"
-  # tag "bioinformatics"
 
-  url "https://github.com/wang-q/DALIGNER/archive/20201008.tar.gz"
-  sha256 "8e7d2de2e6054db924ae9a6d4d5025056b957877382d8c916c324ebc1e69dca6"
-
-  head "https://github.com/wang-q/DALIGNER.git"
+  head "https://github.com/thegenemyers/DALIGNER.git", revision: "f61b8cf"
 
   def install
     system "make"
