@@ -5,8 +5,18 @@ class Fastk < Formula
   head "https://github.com/thegenemyers/FASTK.git", revision: "4604bfc"
 
   def install
+    chdir "LIBDEFLATE" do
+      system "make"
+    end
+    chdir "HTSLIB" do
+      system "make", "libhts.a"
+    end
+    chdir "HTSLIB" do
+      system "make", "htslib_static.mk"
+    end
+
     system "make"
-    bin.install %w[FastK Fastrm Fastmerge Fastcp Fastmv Haplex Histex Homex Logex Profex Symmex Tabex Vennex]
+    bin.install %w[FastK Fastrm Fastmv Fastcp Fastmerge Histex Tabex Profex Logex Vennex Symmex Haplex Homex]
     doc.install "README.md"
   end
 
