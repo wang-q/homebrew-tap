@@ -1,4 +1,4 @@
-class DazzDbAT20201008 < Formula
+class DazzDb < Formula
   desc "DAZZ_DB: The Dazzler Data Base"
   homepage "https://github.com/thegenemyers/DAZZ_DB"
 
