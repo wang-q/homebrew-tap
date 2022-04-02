@@ -2,7 +2,7 @@ class Fastk < Formula
   desc "FastK: A K-mer counter (for HQ assembly data sets)"
   homepage "https://github.com/thegenemyers/FASTK"
 
-  head "https://github.com/thegenemyers/FASTK.git" revision: "4604bfc"
+  head "https://github.com/thegenemyers/FASTK.git", revision: "4604bfc"
 
   def install
     system "make"
