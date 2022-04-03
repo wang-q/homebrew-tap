@@ -26,11 +26,9 @@ class KatAT242 < Formula
       s.gsub! "$(top_builddir)/deps/boost/build/lib", boost.opt_lib
       s.gsub! "$(top_srcdir)/deps/boost/build/include", boost.opt_include
     end
-
-    ENV["PYTHON"] = "python3"
-
+    
     system "./autogen.sh"
-    system "./configure",
+    system "PYTHON=python3 ./configure",
       "--disable-silent-rules",
       "--disable-pykat-install",
       *std_configure_args
