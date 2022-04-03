@@ -1,6 +1,4 @@
 class KatAT242 < Formula
-  include Language::Python::Virtualenv
-
   desc "KAT - The K-mer Analysis Toolkit"
   homepage "https://github.com/TGAC/KAT"
   url "https://github.com/TGAC/KAT/archive/Release-2.4.2.tar.gz"
@@ -29,10 +27,7 @@ class KatAT242 < Formula
       s.gsub! "$(top_srcdir)/deps/boost/build/include", boost.opt_include
     end
 
-    venv = virtualenv_create(libexec/"vendor", "python3")
-
-    xy = Language::Python.major_minor_version "python3"
-    ENV.prepend_create_path "PYTHONPATH", libexec/"vendor/lib/python#{xy}/site-packages"
+    ENV["PYTHON"] = "python3"
 
     system "./autogen.sh"
     system "./configure",
@@ -42,7 +37,6 @@ class KatAT242 < Formula
     system "make"
     system "make", "install"
 
-    bin.env_script_all_files libexec, PYTHONPATH: ENV["PYTHONPATH"]
   end
 
   def caveats; <<~EOS
