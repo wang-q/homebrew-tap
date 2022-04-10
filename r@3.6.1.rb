@@ -6,16 +6,14 @@ class RAT361 < Formula
 
   depends_on :linux
   depends_on "pkg-config" => :build
-  depends_on "gcc@5" # for gfortran
   depends_on "jpeg"
   depends_on "libpng"
-  depends_on "openblas"
   depends_on "pcre"
   depends_on "readline"
   depends_on "xz"
   depends_on "zlib"
   depends_on "bzip2"
-  depends_on "cairo"
+  depends_on "cairo@1.16"
   depends_on "curl"
 
   # needed to preserve executable permissions on files without shebangs
@@ -34,10 +32,10 @@ class RAT361 < Formula
       "--enable-R-shlib",
       "--with-lapack",
       "--disable-java",
-      "--with-blas=-L#{Formula["openblas"].opt_lib} -lopenblas",
       "--without-x",
       "--without-tcltk",
       "--without-ICU",
+      "--with-cairo",
     ]
 
     # don't remember Homebrew's sed shim
