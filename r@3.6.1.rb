@@ -6,7 +6,7 @@ class RAT361 < Formula
 
   depends_on :linux
   depends_on "pkg-config" => :build
-  depends_on "gcc" # for gfortran
+  depends_on "gcc@5" # for gfortran
   depends_on "jpeg"
   depends_on "libpng"
   depends_on "openblas"
@@ -83,9 +83,8 @@ class RAT361 < Formula
 
     # avoid triggering mandatory rebuilds of r when gcc is upgraded
     inreplace lib/"R/etc/Makeconf",
-      Formula["gcc"].prefix.realpath,
-      Formula["gcc"].opt_prefix,
-      OS.mac?
+      Formula["gcc@5"].prefix.realpath,
+      Formula["gcc@5"].opt_prefix
   end
 
   def post_install
