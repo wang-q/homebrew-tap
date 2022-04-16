@@ -5,6 +5,7 @@ class QuorumAT111 < Formula
   sha256 "45d099835eaad43cf915e118e9cb6423411d68c7f35a8145bc725dca366c82b5"
 
   depends_on "pkg-config" => :build
+  depends_on "gcc@5" => :build
   depends_on "jellyfish"
 
   fails_with :clang do
@@ -13,6 +14,10 @@ class QuorumAT111 < Formula
   end
 
   def install
+    # gcc@5
+    ENV["CC"] = Formula["gcc@5"].opt_bin/"gcc-5"
+    ENV["CXX"] = Formula["gcc@5"].opt_bin/"g++-5"
+
     system "./configure",
       "--disable-debug",
       "--disable-dependency-tracking",
