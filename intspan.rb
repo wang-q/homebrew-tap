@@ -3,21 +3,22 @@ class Intspan < Formula
     homepage "https://github.com/wang-q/intspan"
 
     if OS.mac?
-        url "https://github.com/wang-q/intspan/releases/download/v0.4.15/intspan-x86_64-apple-darwin.tar.gz"
-        sha256 "09340dd3732392e7a4c6f8e41532dc32643d9d56f8e516a42ef84b011a8459b8"
+        url "https://github.com/wang-q/intspan/releases/download/v0.6.7/intspan-x86_64-apple-darwin.tar.gz"
+        sha256 "e97489a8a74183f5406822823fc13b91e8d62ddf415e1285b853a6a0d007c183"
     elsif OS.linux?
-        url "https://github.com/wang-q/intspan/releases/download/v0.4.15/intspan-x86_64-unknown-linux-musl.tar.gz"
-        sha256 "dcec6d4b6f87f06af2378affbcead755b4b266e07bfd9473a475ba82d27debc6"
+        url "https://github.com/wang-q/intspan/releases/download/v0.6.7/intspan-x86_64-unknown-linux-gnu.tar.gz"
+        sha256 "49a66067096f0ddbc12d49f01259f354df7a6f3b9f62ae0b3cab7bbdfddaec50"
     end
 
-    version "0.4.15"
+    version "0.6.7"
 
     def install
         # already in target/
         if OS.mac?
             bin.install Dir["release/*"]
         elsif OS.linux?
-            bin.install Dir["x86_64-unknown-linux-musl/release/*"]
+            bin.install Dir["release/*"]
+            # bin.install Dir["x86_64-unknown-linux-musl/release/*"]
         end
     end
 
