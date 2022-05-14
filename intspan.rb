@@ -3,14 +3,14 @@ class Intspan < Formula
     homepage "https://github.com/wang-q/intspan"
 
     if OS.mac?
-        url "https://github.com/wang-q/intspan/releases/download/v0.6.7/intspan-x86_64-apple-darwin.tar.gz"
-        sha256 "e97489a8a74183f5406822823fc13b91e8d62ddf415e1285b853a6a0d007c183"
+        url "https://github.com/wang-q/intspan/releases/download/v0.6.8/intspan-x86_64-apple-darwin.tar.gz"
+        sha256 "b27b2daedf7723276805cc2e517abec9d248468fc3ac3b1d5ddd2791d56767d4"
     elsif OS.linux?
-        url "https://github.com/wang-q/intspan/releases/download/v0.6.7/intspan-x86_64-unknown-linux-gnu.tar.gz"
-        sha256 "49a66067096f0ddbc12d49f01259f354df7a6f3b9f62ae0b3cab7bbdfddaec50"
+        url "https://github.com/wang-q/intspan/releases/download/v0.6.8/intspan-x86_64-unknown-linux-gnu.tar.gz"
+        sha256 "7d6fc1ef2bb196591f497db5b91aa2c91777e40cf8fc6e192bde0b94566338aa"
     end
 
-    version "0.6.7"
+    version "0.6.8"
 
     def install
         # already in target/
