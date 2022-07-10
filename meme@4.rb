@@ -19,7 +19,7 @@ class MemeAT4 < Formula
     # end
 
     bin.install_symlink libexec/"bin/meme"
-    system "cpanm", "XML::Parser::Expat"
+    # system "cpanm", "XML::Parser::Expat"
   end
 
   test do
