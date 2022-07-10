@@ -1,4 +1,4 @@
-class Meme < Formula
+class MemeAT4 < Formula
   # cite Bailey_2009: "https://doi.org/10.1093/nar/gkp335"
   desc "Tools for motif discovery"
   homepage "http://meme-suite.org"
