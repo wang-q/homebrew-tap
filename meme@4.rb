@@ -16,13 +16,8 @@ class MemeAT4 < Formula
       inreplace file, %r{^#!/usr/bin/perl.*}, "#!/usr/bin/env perl"
     end
 
-    if OS.mac?
-      bin.install_symlink libexec/"bin/meme"
-    else
-      ENV["PERL5LIB"] = libexec/"lib/perl5"
-      system "cpanm", "--self-contained", "-l", libexec, "XML::Parser::Expat"
-      (bin/"meme").write_env_script(libexec/"bin/meme", :PERL5LIB => ENV["PERL5LIB"])
-    end
+    bin.install_symlink libexec/"bin/meme"
+    system "cpanm", "XML::Parser::Expat"
   end
 
   test do
