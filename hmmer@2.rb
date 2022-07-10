@@ -12,8 +12,6 @@ class HmmerAT2 < Formula
                           "--enable-threads", "--enable-lfs", "--disable-altivec"
     system "make"
 
-    hmmalign        
-
     bin.install "src/hmmalign"     => "hmmalign2"
     bin.install "src/hmmbuild"     => "hmmbuild2"
     bin.install "src/hmmcalibrate" => "hmmcalibrate2"
