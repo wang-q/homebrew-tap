@@ -10,11 +10,13 @@ class MemeAT4 < Formula
     ENV.deparallelize
     system "./configure", "--disable-debug", "--disable-dependency-tracking", "--prefix=#{libexec}"
     system "make", "install"
+
     prefix.install "tests"
-    perl_files = `grep -l -w "#!/usr/bin/perl" #{bin}/*`.split("\n")
-    perl_files.each do |file|
-      inreplace file, %r{^#!/usr/bin/perl.*}, "#!/usr/bin/env perl"
-    end
+
+    # perl_files = `grep -l -w "#!/usr/bin/perl" #{bin}/*`.split("\n")
+    # perl_files.each do |file|
+    #   inreplace file, %r{^#!/usr/bin/perl.*}, "#!/usr/bin/env perl"
+    # end
 
     bin.install_symlink libexec/"bin/meme"
     system "cpanm", "XML::Parser::Expat"
