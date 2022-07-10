@@ -4,6 +4,7 @@ class MemeAT4 < Formula
   homepage "http://meme-suite.org"
   url "http://meme-suite.org/meme-software/4.11.2/meme_4.11.2_2.tar.gz"
   sha256 "377238c2a9dda64e01ffae8ecdbc1492c100df9b0f84132d50c1cf2f68921b22"
+  version "4.11.2_2"
 
   def install
     ENV.deparallelize
