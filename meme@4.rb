@@ -8,7 +8,9 @@ class MemeAT4 < Formula
 
   def install
     ENV.deparallelize
-    system "./configure", "--disable-debug", "--disable-dependency-tracking", "--prefix=#{libexec}"
+    system "./configure", "--prefix=#{libexec}",
+        "--disable-debug", "--disable-dependency-tracking",
+        "--enable-build-libxml2", "--enable-build-libxslt"
     system "make", "install"
 
     prefix.install "tests"
