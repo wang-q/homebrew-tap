@@ -1,9 +1,9 @@
 class Wfmash < Formula
   desc "A DNA sequence read mapper based on mash distances and the wavefront alignment algorithm"
   homepage "https://github.com/ekg/wfmash"
-  url "https://github.com/ekg/wfmash/archive/refs/tags/v0.8.1.tar.gz"
-  version "0.8.1"
-  sha256 "c8b568b0b45023be130b7d96134c12105be1e62b43b07ff732c3dfba99747ca3"
+  url "https://github.com/waveygang/wfmash/releases/download/v0.10.4/wfmash-v0.10.4.tar.gz"
+  version "0.10.4"
+  sha256 "c86015038e109e3de8cb2ac849514f822b1a0cbf64897f50d57d8ef2e9743d91"
 
   depends_on "zlib"
   depends_on "jemalloc"
