@@ -9,7 +9,7 @@ class Wfmash < Formula
   depends_on "jemalloc"
   depends_on "gsl"
   depends_on "htslib"
-  depends_on "gcc@11" => :build
+  depends_on "gcc@13" => :build
   depends_on "cmake" => :build
 
   def install
@@ -17,14 +17,14 @@ class Wfmash < Formula
     bin.install "scripts/wfplot.R"
 
     cmake_args = *std_cmake_args + %W[
-      -DCMAKE_C_COMPILER='gcc-11'
-      -DCMAKE_CXX_COMPILER='g++-11'
+      -DCMAKE_C_COMPILER='gcc-13'
+      -DCMAKE_CXX_COMPILER='g++-13'
     ]
 
     mkdir "build" do
       # avoid system gcc
       # mkdir build && cd build
-      # cmake .. -DCMAKE_C_COMPILER='gcc-11' -DCMAKE_CXX_COMPILER='g++-11' -DCMAKE_BUILD_TYPE=Release
+      # cmake .. -DCMAKE_C_COMPILER='gcc-13' -DCMAKE_CXX_COMPILER='g++-13' -DCMAKE_BUILD_TYPE=Release
       # make
       system "cmake", "..", *cmake_args
       system "make"
