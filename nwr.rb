@@ -3,14 +3,14 @@ class Nwr < Formula
     homepage "https://github.com/wang-q/nwr"
 
     if OS.mac?
-        url "https://github.com/wang-q/nwr/releases/download/v0.6.4/nwr-x86_64-apple-darwin.tar.gz"
-        sha256 "a4d2bdd6d112da48b30ec4c85702642bce19e0de4a65aa7cbd24f6e6e0314520"
+        url "https://github.com/wang-q/nwr/releases/download/v0.6.5/nwr-x86_64-apple-darwin.tar.gz"
+        sha256 "bbd3a729c516c3095db56b7f9c442079828b4655d4900f0ee3abef142ed826e0"
     elsif OS.linux?
-        url "https://github.com/wang-q/nwr/releases/download/v0.6.4/nwr-x86_64-unknown-linux-gnu.tar.gz"
-        sha256 "eab335e7188daf3a9976ab72adc36e9ba36d7e296559faa3e163d3d098fb19d8"
+        url "https://github.com/wang-q/nwr/releases/download/v0.6.5/nwr-x86_64-unknown-linux-gnu.tar.gz"
+        sha256 "167ed23dc6f6537c8829566b87c5569cedd5ff5eb0a6dfe73b9c0f0861bceb9c"
     end
 
-    version "0.6.4"
+    version "0.6.5"
 
     def install
         # already in target/
