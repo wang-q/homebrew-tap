@@ -6,7 +6,7 @@ class RepeatmaskerAT411 < Formula
   sha256 "a2934996efd0d4baf1247970b94a5dbf5979453f11de31a288b6c099a826240c"
 
   depends_on "hmmer"
-  depends_on "wang-q/tap/rmblast@2.10.0"
+  depends_on "wang-q/tap/rmblast@2.14.1"
   depends_on "wang-q/tap/trf@4"
 
   depends_on "perl"
