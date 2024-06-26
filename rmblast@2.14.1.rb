@@ -1,4 +1,4 @@
-class RmblastAT2100 < Formula
+class RmblastAT2141 < Formula
   desc "RepeatMasker compatible version of the standard NCBI BLAST suite"
   homepage "https://www.repeatmasker.org/RMBlast.html"
   if OS.mac?
