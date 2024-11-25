@@ -2,7 +2,7 @@ class DazzDb < Formula
   desc "DAZZ_DB: The Dazzler Data Base"
   homepage "https://github.com/thegenemyers/DAZZ_DB"
 
-  head "https://github.com/thegenemyers/DAZZ_DB.git", revision: "70d2c8e"
+  head "https://github.com/thegenemyers/DAZZ_DB.git", revision: "be65e59"
 
   def install
     system "make"

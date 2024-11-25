@@ -2,7 +2,7 @@ class Merquryfk < Formula
   desc "MerquryFK & KatFK: Fast & Simple"
   homepage "https://github.com/thegenemyers/MERQURY.FK"
 
-  head "https://github.com/thegenemyers/MERQURY.FK.git", revision: "aa0d104"
+  head "https://github.com/thegenemyers/MERQURY.FK.git", revision: "a100533"
 
   def install
     system "make"
