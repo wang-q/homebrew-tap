@@ -6,7 +6,16 @@ class Merquryfk < Formula
 
   def install
     system "make"
-    bin.install %w[HAPmaker CNplot ASMplot HAPplot MerquryFK KatComp KatGC PloidyPlot]
+    bin.install %w[
+      HAPmaker
+      CNplot
+      ASMplot
+      HAPplot
+      MerquryFK
+      KatComp
+      KatGC
+      PloidyPlot
+    ]
     doc.install "README.md"
   end
 
