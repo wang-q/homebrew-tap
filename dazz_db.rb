@@ -6,7 +6,29 @@ class DazzDb < Formula
 
   def install
     system "make"
-    bin.install %w[arrow2DB Catrack DAM2fasta DB2arrow DB2fasta DB2quiva DBdump DBdust DBrm DBshow DBsplit DBstats DBwipe fasta2DAM fasta2DB quiva2DB rangen simulator]
+    bin.install %w[
+      fasta2DB
+      DB2fasta
+      quiva2DB
+      DB2quiva
+      arrow2DB
+      DB2arrow
+      fasta2DAM
+      DAM2fasta
+      DBsplit
+      DBtrim
+      DBdust
+      Catrack
+      DBshow
+      DB2ONE
+      DBstats
+      DBrm
+      DBmv
+      DBcp
+      DBwipe
+      simulator
+      rangen
+    ]
     doc.install "README.md"
   end
 
