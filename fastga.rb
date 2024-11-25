@@ -1,4 +1,4 @@
-class FastGA < Formula
+class Fastga < Formula
   desc "FastGA: A Fast Genome Aligner"
   homepage "https://github.com/thegenemyers/FASTGA"
 
