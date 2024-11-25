@@ -6,7 +6,18 @@ class Daligner < Formula
 
   def install
     system "make"
-    bin.install %w[daligner dumpLA HPC.daligner LAa2b LAb2a LAcat LAcheck LAdump LAmerge LAshow LAsort LAsplit]
+    bin.install %w[
+      daligner
+      LAsort
+      LAmerge
+      LAshow
+      LA2ONE
+      ONE2LA
+      LAcat
+      LAsplit
+      LAcheck
+      HPC.daligner
+    ]
     doc.install "README.md"
   end
 
