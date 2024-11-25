@@ -16,7 +16,22 @@ class Fastk < Formula
     end
 
     system "make"
-    bin.install %w[FastK Fastrm Fastmv Fastcp Fastmerge Histex Tabex Profex Logex Vennex Symmex Haplex Homex]
+    bin.install %w[
+      FastK
+      Fastrm
+      Fastmv
+      Fastcp
+      Fastmerge
+      Fastcat
+      Histex
+      Tabex
+      Profex
+      Logex
+      Symmex
+      Haplex
+      Homex
+      Vennex
+    ]
     doc.install "README.md"
   end
 
