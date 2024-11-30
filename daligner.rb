@@ -2,6 +2,7 @@ class Daligner < Formula
   desc "DALIGNER: Find all significant local alignments between reads"
   homepage "https://github.com/thegenemyers/DALIGNER"
 
+  # 335105d triggers core dump
   head "https://github.com/thegenemyers/DALIGNER.git", revision: "a8e2f42"
 
   def install
