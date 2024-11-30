@@ -2,7 +2,7 @@ class Daligner < Formula
   desc "DALIGNER: Find all significant local alignments between reads"
   homepage "https://github.com/thegenemyers/DALIGNER"
 
-  head "https://github.com/thegenemyers/DALIGNER.git", revision: "335105d"
+  head "https://github.com/thegenemyers/DALIGNER.git", revision: "a8e2f42"
 
   def install
     system "make"
