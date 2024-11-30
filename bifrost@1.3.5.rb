@@ -1,9 +1,9 @@
-class BifrostAT106 < Formula
+class BifrostAT135 < Formula
   # cite Holley_2019: "https://doi.org/10.1101/695338"
   desc "Construction, indexing and querying of colored/compacted de Bruijn graphs"
   homepage "https://github.com/pmelsted/bifrost"
-  url "https://github.com/pmelsted/bifrost/archive/refs/tags/v1.0.6.4.tar.gz"
-  sha256 "139c5a11ce5796cda7ea67ff2cd305392620d18364bd75368a9d87602ba16763"
+  url "https://github.com/pmelsted/bifrost/archive/refs/tags/v1.3.5.tar.gz"
+  sha256 "e1b2491328b0cc1a32e433a8a9780f05547fa4b8d674b58abdda9ac8809f5341"
 
   depends_on "cmake" => :build
 
