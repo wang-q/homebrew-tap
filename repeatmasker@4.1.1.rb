@@ -9,8 +9,9 @@ class RepeatmaskerAT411 < Formula
   depends_on "wang-q/tap/rmblast@2.14.1"
   depends_on "wang-q/tap/trf@4"
 
-  depends_on "perl"
-  depends_on "cpanminus" => :build
+  # Perl and cpanm should be installed in brew or system
+  # depends_on "perl"
+  # depends_on "cpanminus" => :build
 
   def install
     libexec.install Dir["*"]
