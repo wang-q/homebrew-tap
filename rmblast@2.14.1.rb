@@ -10,8 +10,6 @@ class RmblastAT2141 < Formula
   end
   version "2.14.1"
 
-  keg_only :versioned_formula
-
   def install
     bin.install Dir["bin/*"]
   end
