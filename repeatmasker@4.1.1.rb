@@ -16,7 +16,6 @@ class RepeatmaskerAT411 < Formula
   def install
     libexec.install Dir["*"]
     bin.install_symlink "../libexec/RepeatMasker"
-    system "cpanm", "Text::Soundex"
   end
 
   def caveats
