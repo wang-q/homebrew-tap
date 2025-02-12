@@ -5,8 +5,6 @@ class BifrostAT135 < Formula
   url "https://github.com/pmelsted/bifrost/archive/refs/tags/v1.3.5.tar.gz"
   sha256 "e1b2491328b0cc1a32e433a8a9780f05547fa4b8d674b58abdda9ac8809f5341"
 
-  depends_on "cmake" => :build
-
   uses_from_macos "zlib"
 
   def install
