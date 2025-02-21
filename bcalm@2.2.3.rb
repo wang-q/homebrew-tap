@@ -4,7 +4,7 @@ class BcalmAT223 < Formula
   homepage "https://github.com/GATB/bcalm"
   url "https://github.com/GATB/bcalm.git",
       tag:      "v2.2.3",
-      revision: "1f8a8b1"
+      revision: "1f8a8b15e84f6bcaf47296eb3eb381288131b203"
   license "MIT"
 
   depends_on "cmake" => :build
